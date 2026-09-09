@@ -1,0 +1,94 @@
+/* Fuentes locales */
+@font-face {
+  font-family: "Menda";
+  src: url("../fonts/Menda-81193598/Menda%20Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Menda";
+  src: url("../fonts/Menda-81193598/Menda%20Extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Menda";
+  src: url("../fonts/Menda-81193598/Menda%20Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Menda";
+  src: url("../fonts/Menda-81193598/Menda%20Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Menda";
+  src: url("../fonts/Menda-81193598/Menda%20Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AkzidenzGrotesk";
+  src: url("../fonts/AkzidenzGrotesk-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeosansLight";
+  src: url("../fonts/GeosansLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Variables de color para modo oscuro y claro */
+:root {
+  --font-primary: "Menda", sans-serif;
+  --font-secondary: "AkzidenzGrotesk", sans-serif;
+  --font-light: "GeosansLight", sans-serif;
+
+  --background-dark: #050505;
+  --background-light: #f4f4f9;
+  --surface-dark: #1a1a1a;
+  --surface-light: #ffffff;
+
+  /* Textos en Modo Oscuro */
+  --text-dark: #ffffff;
+  --text-secondary-dark: #b0b0b0;
+
+  /* Textos en Modo Claro */
+  --text-light: #000000;
+  --text-secondary-light: #444444;
+
+  --blue-primary: #f35b04;
+  --blue-secondary: #f18701;
+  --blue-light: #f7b801;
+  --red-accent: #7678ed;
+  --cream-light: #3d348b;
+
+  --border-dark: #333333;
+  --border-light: #dddddd;
+
+  /* Brillos del fondo animado */
+  --blob-1: rgba(27, 101, 166, 0.4);
+  --blob-2: rgba(74, 176, 217, 0.15);
+
+  --bg-color: var(--background-dark);
+  --text-color: var(--text-dark);
+  --text-secondary-color: var(--text-secondary-dark);
+  --surface-color: var(--surface-dark);
+  --border-color: var(--border-dark);
+}
+
+body.light-mode {
+  --bg-color: var(--background-light);
+  --text-color: var(--text-light);
+  --text-secondary-color: var(--text-secondary-light);
+  --surface-color: var(--surface-light);
+  --border-color: var(--border-light);
+  --blob-1: rgba(27, 101, 166, 0.12);
+  --blob-2: rgba(74, 176, 217, 0.08);
+}
