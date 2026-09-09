@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Servicios de automatización de procesos para PYMEs. Optimiza tu tiempo, reduce costos y mejora la eficiencia de tu negocio con BeMaker."
+    />
+    <meta property="og:title" content="Automatización de Procesos - BeMaker" />
+    <meta
+      property="og:description"
+      content="Servicios de automatización de procesos para pequeñas empresas. Optimiza tus operaciones y llega a más clientes."
+    />
+    <meta property="og:image" content="img/logo/LOGO BEMAKER-24.png" />
+    <meta property="og:type" content="website" />
+    <title>Automatización de Procesos - BeMaker</title>
+
+    <link rel="canonical" href="https://bemaker.cl/automatizacion.html" />
+
+    <link rel="icon" type="image/x-icon" href="img/logo/LOGO BEMAKER-24.png" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Automatización de Procesos",
+        "provider": {
+          "@type": "ProfessionalService",
+          "name": "BeMaker",
+          "url": "https://bemaker.cl/"
+        },
+        "description": "Servicios de automatización de procesos y tareas repetitivas para PYMEs."
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="animated-background"></div>
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+    <app-header></app-header>
+
+    <!-- =========================
+         MAIN CONTENT
+         ========================= -->
+    <main class="automation-page">
+      <section
+        class="hero-section"
+        style="text-align: center; padding: 100px 40px"
+      >
+        <h1 class="hero-title" data-aos="fade-up">
+          Automatización de Procesos
+        </h1>
+        <p class="hero-text" data-aos="fade-up" data-aos-delay="100">
+          Libera el potencial de tu negocio eliminando tareas repetitivas.
+          Conectamos tus herramientas para que trabajen por ti.
+        </p>
+      </section>
+
+      <section class="expertise-section" style="padding: 60px 40px">
+        <div style="text-align: center">
+          <h2 class="title" data-aos="fade-up">
+            Nuestros Servicios de Automatización
+          </h2>
+          <p class="description" data-aos="fade-up" data-aos-delay="100">
+            Soluciones inteligentes para mejorar la productividad de tu empresa.
+          </p>
+        </div>
+
+        <div class="expertise-grid" style="margin-top: 40px">
+          <article
+            class="expertise-card step-card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="step-number"><i class="fas fa-sync-alt"></i></div>
+            <h3>Sincronización de Datos</h3>
+            <p>
+              Conecta tu sitio web con tu CRM, hojas de cálculo o bases de datos
+              de forma automática.
+            </p>
+          </article>
+
+          <article
+            class="expertise-card step-card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="step-number">
+              <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <h3>Comunicaciones Automáticas</h3>
+            <p>
+              Envía correos electrónicos, mensajes de WhatsApp o SMS
+              automatizados a tus clientes.
+            </p>
+          </article>
+
+          <article
+            class="expertise-card step-card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="step-number">
+              <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <h3>Gestión de Facturación</h3>
+            <p>
+              Automatiza la creación y envío de facturas y recibos al completar
+              una venta.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-cta-section" style="padding: 60px 40px">
+        <div class="cta-banner-content" data-aos="fade-up">
+          <h2>¿Listo para optimizar tu tiempo?</h2>
+          <p>
+            Contáctanos y descubre cómo la automatización puede escalar tu
+            negocio.
+          </p>
+          <a
+            href="/contacto.html"
+            class="hero-cta gradient-border-cta"
+            style="
+              text-decoration: none;
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+              box-sizing: border-box;
+            "
+          >
+            Cotizar Automatización
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+    <app-footer></app-footer>
+
+    <!-- =========================
+         MODALS & CHATBOT
+         ========================= -->
+    <!-- CHATBOT -->
+    <div class="chatbot-container">
+      <button
+        class="chatbot-toggler"
+        id="chatbot-toggler"
+        aria-label="Abrir chat"
+      >
+        <i class="fas fa-comment-dots" aria-hidden="true"></i>
+        <i class="fas fa-times close-icon" aria-hidden="true"></i>
+      </button>
+      <div class="chatbot-window" id="chatbot-window">
+        <div class="chat-header">
+          <h3>BeMaker Bot</h3>
+          <p><span class="online-dot"></span> En línea</p>
+        </div>
+        <div class="chat-body" id="chat-body">
+          <div class="message bot-message">
+            ¡Hola! 👋 Soy el asistente virtual de BeMaker. ¿En qué te puedo
+            ayudar hoy?
+          </div>
+        </div>
+        <div class="chat-footer">
+          <input
+            type="text"
+            id="chat-input"
+            placeholder="Escribe tu mensaje aquí..."
+            autocomplete="off"
+            aria-label="Mensaje"
+          />
+          <button id="chat-send-btn" aria-label="Enviar mensaje">
+            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
