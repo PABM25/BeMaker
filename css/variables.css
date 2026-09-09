@@ -1,34 +1,4 @@
 /* Fuentes locales */
-@font-face {
-  font-family: "Menda";
-  src: url("../fonts/Menda-81193598/Menda%20Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Menda";
-  src: url("../fonts/Menda-81193598/Menda%20Extrabold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Menda";
-  src: url("../fonts/Menda-81193598/Menda%20Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Menda";
-  src: url("../fonts/Menda-81193598/Menda%20Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Menda";
-  src: url("../fonts/Menda-81193598/Menda%20Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
 
 @font-face {
   font-family: "AkzidenzGrotesk";
@@ -46,7 +16,7 @@
 
 /* Variables de color para modo oscuro y claro */
 :root {
-  --font-primary: "Menda", sans-serif;
+  --font-primary: "Inter", sans-serif;
   --font-secondary: "AkzidenzGrotesk", sans-serif;
   --font-light: "GeosansLight", sans-serif;
 

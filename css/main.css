@@ -1250,8 +1250,30 @@ body.light-mode .step-number {
   .expertise-grid {
     grid-template-columns: 1fr;
   }
+  .hero-section {
+    padding: 40px 20px;
+  }
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  .expertise-section,
+  .about-us-section,
+  .testimonials-section,
+  .plans-section,
+  .trusted-section,
+  .final-cta-section {
+    padding: 40px 20px;
+  }
+  .hero-left-panel {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .terminal-window {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .terminal-body {
+    padding: 10px;
   }
 }
 
