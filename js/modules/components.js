@@ -11,11 +11,10 @@ class AppHeader extends HTMLElement {
         <nav class="header-nav">
           <ul>
             <!-- Rutas limpias sin .html -->
-            <li><a href="index.html#services-section">Planes PYME</a></li>
-            <li><a href="kits.html">Kits DIY</a></li>
             <li><a href="index.html#about-us-section">Sobre Nosotros</a></li>
             <li><a href="portafolio.html">Portafolio</a></li>
             <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="https://bemaker.cl/tienda">Ir a la tienda</a></li>
           </ul>
         </nav>
         <div class="header-actions">
@@ -94,6 +93,7 @@ class AppFooter extends HTMLElement {
             <a href="https://www.instagram.com/bemaker.dev" target="_blank" rel="noopener noreferrer" aria-label="Visitar nuestro perfil de Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
             <a href="https://www.facebook.com/share/16bNj2comz/" target="_blank" rel="noopener noreferrer" aria-label="Visitar nuestra página de Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
           </div>
+          <button id="back-to-top" aria-label="Volver al inicio" style="display: none; position: fixed; bottom: 30px; right: 100px; z-index: 9999; background: var(--blue-primary); color: white; border: none; border-radius: 50%; width: 50px; height: 50px; cursor: pointer; font-size: 1.5rem; transition: background 0.3s, transform 0.3s;"><i class="fas fa-arrow-up"></i></button>
         </div>
       </footer>
     `;
