@@ -348,16 +348,16 @@ ul {
   display: flex;
   gap: 40px;
   align-items: center;
+  justify-content: center;
 }
-.hero-left-panel {
+.hero-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 50%;
-}
-.hero-right-panel {
-  width: 50%;
-  padding-left: 20px;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
 }
 .hero-title {
   font-size: 3.5rem;
@@ -424,83 +424,6 @@ ul {
   background-color: #c40606;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(237, 8, 7, 0.4);
-}
-
-/* Terminal Window */
-.terminal-window {
-  width: 100%;
-  height: 450px;
-  background-color: #0d0d0d;
-  border-radius: 12px;
-  box-shadow: 0 15px 35px rgba(1, 0, 102, 0.4);
-  border: 1px solid var(--border-color);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  font-family: "Courier New", Courier, monospace;
-}
-.terminal-header {
-  background-color: #2d2d2d;
-  padding: 12px 15px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #1a1a1a;
-}
-.terminal-buttons {
-  display: flex;
-  gap: 8px;
-}
-.terminal-buttons span {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  display: inline-block;
-}
-.close-btn {
-  background-color: #ff5f56;
-}
-.min-btn {
-  background-color: #ffbd2e;
-}
-.max-btn {
-  background-color: #27c93f;
-}
-.terminal-title {
-  color: #a0a0a0;
-  font-size: 0.85rem;
-  margin-left: 15px;
-  flex-grow: 1;
-  text-align: center;
-  padding-right: 50px;
-}
-.terminal-body {
-  padding: 20px;
-  color: #00ff00;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  flex-grow: 1;
-  overflow-y: auto;
-  text-align: left;
-}
-.terminal-line {
-  margin-bottom: 8px;
-  opacity: 0;
-  animation: fadeIn 0.1s forwards;
-}
-.terminal-success {
-  color: #00ff00;
-}
-.terminal-info {
-  color: #3b82f6;
-}
-.terminal-highlight {
-  color: #ed0807;
-  font-weight: bold;
-}
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
 }
 
 /* Secciones Generales */
@@ -1083,8 +1006,7 @@ body.light-mode .step-number {
     flex-direction: column;
     text-align: center;
   }
-  .hero-left-panel,
-  .hero-right-panel {
+  .hero-content {
     width: 100%;
     padding: 0;
   }
@@ -1126,16 +1048,9 @@ body.light-mode .step-number {
   .final-cta-section {
     padding: 40px 20px;
   }
-  .hero-left-panel {
+  .hero-content {
     max-width: 100%;
     overflow-x: hidden;
-  }
-  .terminal-window {
-    width: 100%;
-    font-size: 0.8rem;
-  }
-  .terminal-body {
-    padding: 10px;
   }
 }
 
