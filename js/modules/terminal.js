@@ -55,7 +55,7 @@ export function initTerminal() {
       {
         text: "🚀 SUCCESS: 150+ proyectos desplegados con éxito.",
         delay: 6500,
-        class: "terminal-highlight",
+        class: "terminal-success",
       },
       {
         text: "----------------------------------------",
