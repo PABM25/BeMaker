@@ -1,6 +1,5 @@
 import { initPortfolio } from "./modules/portfolio.js";
 import { initModals } from "./modules/modals.js";
-import { initTerminal } from "./modules/terminal.js";
 import { initChatbot } from "./modules/chatbot.js";
 import { initPixelCanvas } from "./modules/pixel-canvas.js";
 import "./modules/components.js";
@@ -10,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     AOS.init({ once: true, duration: 800 });
   }
   initModals();
-  initTerminal();
   initChatbot();
   initPortfolio();
 });
