@@ -4,23 +4,23 @@ class AppHeader extends HTMLElement {
       <header class="header">
         <div class="header-logo">
           <!-- Modificado para apuntar a la raíz -->
-          <a href="/">
+          <a href="index.html">
             <img id="logo-image" src="img/logo/LOGO BEMAKER-16 copy.png" alt="logo BeMaker" />
           </a>
         </div>
         <nav class="header-nav">
           <ul>
             <!-- Rutas limpias sin .html -->
-            <li><a href="/#services-section">Planes PYME</a></li>
-            <li><a href="/kits">Kits DIY</a></li>
-            <li><a href="/#about-us-section">Sobre Nosotros</a></li>
-            <li><a href="/portafolio">Portafolio</a></li>
-            <li><a href="/contacto">Contacto</a></li>
+            <li><a href="index.html#services-section">Planes PYME</a></li>
+            <li><a href="kits.html">Kits DIY</a></li>
+            <li><a href="index.html#about-us-section">Sobre Nosotros</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
         <div class="header-actions">
           <!-- Convertido a enlace <a> para mejor SEO y accesibilidad -->
-          <a href="/contacto" class="header-cta" style="text-decoration: none; display: inline-block; text-align: center;">
+          <a href="contacto.html" class="header-cta" style="text-decoration: none; display: inline-block; text-align: center;">
             Comenzar
           </a>
           <button id="theme-switch" class="theme-switch-btn">🌙</button>
