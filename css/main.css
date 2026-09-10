@@ -505,7 +505,6 @@ ul {
 
 /* Secciones Generales */
 .expertise-section,
-.plans-section,
 .about-us-section,
 .ideas-section {
   padding: 80px 40px;
@@ -623,132 +622,6 @@ body.light-mode .step-number {
 .icon-wrapper img {
   width: 40px;
   margin: 0;
-}
-
-/* --- PLANES PYME --- */
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  max-width: 1200px;
-  margin: 50px auto 0;
-  align-items: stretch;
-}
-.pricing-card {
-  background: var(--surface-color);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  padding: 40px 30px;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  position: relative;
-  transition:
-    transform 0.4s ease,
-    border-color 0.4s ease,
-    box-shadow 0.4s ease;
-}
-.pricing-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--blue-primary);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-.plan-header {
-  margin-bottom: 25px;
-  text-align: center;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 20px;
-}
-.plan-header h3 {
-  font-size: 1.8rem;
-  color: var(--text-color);
-  margin-bottom: 10px;
-}
-.plan-target {
-  font-size: 0.95rem;
-  color: var(--text-secondary-color);
-  min-height: 45px;
-}
-.plan-price {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: var(--blue-primary);
-  margin-top: 15px;
-}
-.plan-price span {
-  font-size: 1rem;
-  color: var(--text-secondary-color);
-  font-weight: 400;
-}
-.plan-body {
-  flex-grow: 1;
-  margin-bottom: 30px;
-}
-.plan-features {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.plan-features li {
-  margin-bottom: 15px;
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 0.95rem;
-  color: var(--text-color);
-}
-.plan-features i {
-  color: var(--blue-primary);
-  margin-top: 4px;
-  font-size: 1.1rem;
-}
-.plan-footer {
-  text-align: center;
-}
-.plan-btn {
-  width: 100%;
-  padding: 15px;
-  border-radius: 12px;
-  font-size: 1.05rem;
-}
-.btn {
-  background-color: transparent;
-  border: 2px solid var(--border-color);
-  color: var(--text-color);
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-.btn:hover {
-  background-color: var(--blue-primary);
-  border-color: var(--blue-primary);
-  color: white;
-}
-
-.popular-plan {
-  border: 2px solid var(--blue-primary);
-  box-shadow: 0 10px 30px rgba(1, 0, 102, 0.1);
-  transform: scale(1.03);
-}
-.popular-plan:hover {
-  transform: scale(1.03) translateY(-8px);
-}
-.popular-badge {
-  position: absolute;
-  top: -16px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: linear-gradient(135deg, var(--red-accent), #ff4a4a);
-  color: white;
-  padding: 6px 20px;
-  border-radius: 30px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  box-shadow: 0 5px 15px rgba(237, 8, 7, 0.3);
-  white-space: nowrap;
-}
-.popular-plan .plan-features i {
-  color: var(--red-accent);
 }
 
 /* --- PORTAFOLIO (Ideas) --- */
@@ -1218,16 +1091,6 @@ body.light-mode .step-number {
   .expertise-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .pricing-grid {
-    grid-template-columns: 1fr;
-    max-width: 500px;
-  }
-  .popular-plan {
-    transform: scale(1);
-  }
-  .popular-plan:hover {
-    transform: translateY(-8px);
-  }
 }
 
 @media (max-width: 800px) {
@@ -1259,7 +1122,6 @@ body.light-mode .step-number {
   .expertise-section,
   .about-us-section,
   .testimonials-section,
-  .plans-section,
   .trusted-section,
   .final-cta-section {
     padding: 40px 20px;
